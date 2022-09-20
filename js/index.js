@@ -1,7 +1,7 @@
 function tinhtoan() {
     var kgca = document.getElementById("kgcakho").value;
     var giaca = document.getElementById("giacakho").value;
-
+    document.getElementById("vungchua").style.display="block";
     if (kgca == "" || giaca == "") {
         alert("không được để trống");
     }
@@ -23,7 +23,7 @@ function reset() {
 
 function tinhtoancatuoi() {
     var catuoi = document.getElementById("kgcatuoi").value;
-
+    document.getElementById("vungchua-catuoi").style.display="block";
     if (catuoi == ""){
         alert("không được để trống");
     }else if(catuoi<=0){
@@ -31,7 +31,7 @@ function tinhtoancatuoi() {
     } else {
         var tongkgkho = 0;
         tongkgkho = catuoi*0.218;
-        document.getElementById("vungchua-catuoi").innerHTML = '<div class="alert alert-success">'+catuoi+" kg cà tươi được "+tongkgkho+" kg cà khô."+'</div>'
+        document.getElementById("vungchua-catuoi").innerHTML = '<div class="alert alert-success">'+catuoi+" kg cà tươi được "+tongkgkho+" kg cà nhân."+'</div>'
     }
 }
 
