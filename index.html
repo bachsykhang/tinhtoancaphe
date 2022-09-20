@@ -17,15 +17,15 @@
     <script src="./js/index.js"></script>
 </head>
 <body>
-    <h1>Tính giá cà phê !</h1>
+    <h1>Tính giá cà phê nhân !</h1>
     <div class="container">
         <div class="form-group">
-            <label for="usr">Nhập số kg cà khô:</label>
+            <label for="usr">Nhập số kg cà nhân:</label>
             <input type="text" class="form-control" id="kgcakho">
         </div>
 
         <div class="form-group">
-            <label for="usr">Nhập giá cà khô:</label>
+            <label for="usr">Nhập giá cà nhân:</label>
             <input type="text" class="form-control" id="giacakho">
         </div>
 
@@ -35,6 +35,18 @@
         </div>
         <div id="vungchua"></div>
     </div>
-
+    <hr>
+    <h1>Quy đổi cà tươi sang cà khô !</h1>
+    <div class="container">
+        <div class="form-group">
+            <label for="usr">Nhập số kg cà tươi:</label>
+            <input type="text" class="form-control" id="kgcatuoi">
+        </div>
+        <div class="bt-caphe">
+            <button type="button" class="btn btn-success" onclick="tinhtoancatuoi()">Tính toán</button>
+            <button type="button" class="btn btn-danger" onclick="resetcatuoi()">Reset</button>
+        </div>
+        <div id="vungchua-catuoi"></div>
+    </div>
 </body>
 </html>

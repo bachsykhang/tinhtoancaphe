@@ -14,3 +14,19 @@ function tinhtoan() {
 function reset() {
     document.getElementById("vungchua").style.display="none";
 }
+
+function tinhtoancatuoi() {
+    var catuoi = document.getElementById("kgcatuoi").value;
+
+    if (catuoi == ""){
+        alert("không được để trống");
+    } else {
+        var tongkgkho = 0;
+        tongkgkho = catuoi*0.218;
+        document.getElementById("vungchua-catuoi").innerHTML = '<div class="alert alert-success">'+catuoi+" kg cà tươi được "+tongkgkho+" kg cà khô."+'</div>'
+    }
+}
+
+function resetcatuoi() {
+    document.getElementById("vungchua-catuoi").style.display="none";
+}

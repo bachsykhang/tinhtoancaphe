@@ -23,3 +23,7 @@ label {
     display: flex;
     justify-content: space-evenly;
 }
+
+hr {
+    border: 1px solid red;
+}
